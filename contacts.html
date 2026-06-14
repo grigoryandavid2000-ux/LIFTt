@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакты проекта LIFT: Telegram-бот, email, Telegram-канал и форма обратной связи.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Контакты LIFT">
+    <meta property="og:description" content="Контакты проекта LIFT: Telegram-бот, email, Telegram-канал и форма обратной связи.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/hero-athlete.jpg">
+    <title>Контакты LIFT</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css?v=5">
+    <script defer src="assets/js/main.js?v=3"></script>
+</head>
+<body data-page="contacts">
+<div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader-box">
+            <div class="preloader-logo">LIFT<span>.</span></div>
+            <div class="preloader-bar"><span></span></div>
+        </div>
+    </div>
+    <nav class="navbar ios-navbar">
+        <a href="index.html" class="logo">LIFT<span>.</span></a>
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul class="nav-links">
+<li><a href="index.html" data-page="home">Главная</a></li>
+<li><a href="about.html" data-page="about">О боте</a></li>
+<li><a href="programs.html" data-page="programs">Программы</a></li>
+<li><a href="calculators.html" data-page="calculators">Калькуляторы</a></li>
+<li><a href="games.html" data-page="games">Игры</a></li>
+<li><a href="quotes.html" data-page="quotes">Цитаты</a></li>
+<li><a href="faq.html" data-page="faq">FAQ</a></li>
+<li><a href="contacts.html" data-page="contacts">Контакты</a></li>
+        </ul>
+        <a href="https://t.me/twwoLiftbot_bot" target="_blank" rel="noopener" class="btn ios-button">Открыть бота</a>
+    </nav>
+    <main class="container">
+<section class="page-hero">
+    <h1>📬 <span>Контакты</span></h1>
+    <p class="subtitle">Свяжитесь с нами или следите за обновлениями</p>
+    <div class="grid-3">
+        <div class="card">
+            <div class="card-icon">🤖</div>
+            <h3>Бот в Telegram</h3>
+            <a href="https://t.me/twwoLiftbot_bot" target="_blank" rel="noopener" class="accent-link">@twwoLiftbot_bot</a>
+        </div>
+        <div class="card">
+            <div class="card-icon">📧</div>
+            <h3>Email</h3>
+            <div class="contact-actions">
+                <a href="https://e.mail.ru/compose/?to=lifttrainerbot%40mail.ru&subject=Сообщение%20с%20сайта%20LIFT" target="_blank" rel="noopener" class="btn">Написать письмо</a>
+                <a href="https://e.mail.ru/compose/?to=lifttrainerbot%40mail.ru" target="_blank" rel="noopener" class="accent-link">Открыть Mail.ru</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-icon">📱</div>
+            <h3>Telegram-канал</h3>
+            <span class="muted-link">@LiftChannel</span>
+            <p class="small-note">Ссылку подключим после запуска канала.</p>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer>
+        <p>© 2026 <a href="index.html">LIFT</a>. Все права защищены.</p>
+        <p><a href="https://t.me/twwoLiftbot_bot" target="_blank" rel="noopener">@twwoLiftbot_bot</a> · <a href="https://e.mail.ru/compose/?to=lifttrainerbot%40mail.ru&subject=Сообщение%20с%20сайта%20LIFT" target="_blank" rel="noopener">lifttrainerbot@mail.ru</a> · <span class="footer-muted">@LiftChannel</span></p>
+    </footer>
+
+    <button class="chat-widget-btn ios-button" id="chatBtn" onclick="toggleChat()">💬</button>
+    <div class="chat-window glass-card" id="chatWindow">
+        <div class="chat-header"><h3>LIFT<span>.</span> — мини-бот</h3><button class="chat-close" onclick="toggleChat()">✕</button></div>
+        <div class="chat-messages" id="chatMessages"><div class="message bot">Привет! Я LIFT мини-бот. Могу подсказать по программам, технике, питанию, разминке и рекомендациям 👇</div></div>
+                <div class="chat-buttons">
+            <button class="chat-chip" onclick="sendQuickReply('Программы')">Программы</button>
+            <button class="chat-chip" onclick="sendQuickReply('Жим')">Жим</button>
+            <button class="chat-chip" onclick="sendQuickReply('Питание')">Питание</button>
+            <button class="chat-chip" onclick="sendQuickReply('Разминка')">Разминка</button>
+            <button class="chat-chip" onclick="sendQuickReply('О боте')">О боте</button>
+        </div>        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Напиши сообщение..." onkeypress="if(event.key==='Enter')sendMessage()">
+            <button class="chat-send" onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
